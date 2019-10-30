@@ -1,5 +1,5 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
+html { box-sizing: border-box; font-family: 'Roboto', sans-serif;}
 *, ::after, ::before { box-sizing: inherit; }
 
 /*
@@ -8,9 +8,6 @@ html { box-sizing: border-box; }
  svetle fialova   #48418e
  tmave fialova    #25133d
 
- POUZITE PISMO
- Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
- https://fonts.google.com/specimen/Roboto
 */
 
 body {
@@ -29,5 +26,124 @@ body {
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+/* Menu */
+    .menu ul {
+        display: flex;
+        margin: 0px;
+        justify-content: space-between;
+        /* padding: 0 0 0 15px ; */
+        width: 65%;
+    }
+
+    .menu li {
+        list-style: none;
+        display: inline;
+        color: #48418e;
+        padding: 15px 0 15px 0;
+        flex: 1;
+    }
+
+    .menu li:hover {
+        color: #25133d;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+/* visual */
+.visual {
+    color: white;
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+    .visualContent {
+        padding-left: 40px;
+    }
+
+    .visual a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        border: solid white 1px;
+        border-radius: 10px;
+        padding: 15px 25px;
+        font-size: 20px;
+        margin: 0 20px 0 0;
+    }
+
+    .visual a:hover {
+        background-color: #48418e;
+    }
+
+    .visual h1 {
+        position: relative;
+        font-weight: 400;
+        font-size: 90px;
+        margin: 55px 0 0 0;
+        line-height: 90px;
+    }
+
+    .visual p {
+        position: relative;
+        display: block;
+        font-weight: 300;
+        font-size: 36px;
+        width: 400px;
+        margin: 40px 0 40px 0;
+    }
+
+    .visual .phone {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .background-image {
+        width: 960px;
+        position: absolute;
+        /* height: 450px; */
+    }
+/* end visual */
+
+
+/* content */
+.content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+    .content img {
+        width: 85px;
+    }
+
+    .content div {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .content p {
+        color: #25133d;
+    }
+
+/* end content */
+
+
+/* footer */
+.footer {
+    text-align: center;
+    color: white;
+    background-color: #48418e;
+    padding: 10px;
+}
+
+/* end footer */
+
+h2 {
+    color: #48418e;
+}
+
+
